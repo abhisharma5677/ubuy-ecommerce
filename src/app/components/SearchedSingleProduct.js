@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const SearchedSingleProduct = ({imageUrl , title , price , category , id}) => {
     return (
-        <div className="flex flex-col items-center justify-center space-y-4 mt-[70px] bg-white shadow-2xl rounded-lg py-10 w-11/12">
+        <div className="flex flex-col items-center justify-center space-y-4 mt-[70px] bg-white shadow-2xl rounded-lg py-10 w-11/12 lg:w-4/5">
             {/* <div className='font-extrabold text-[20px] mb-[30px] ' >{category.charAt(0).toUpperCase() + category.slice(1)}</div> */}
             <div>
                 <Link href={`/../../${id}`}>

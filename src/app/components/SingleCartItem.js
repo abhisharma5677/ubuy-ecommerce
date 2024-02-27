@@ -25,17 +25,17 @@ const SingleCartItem = ({ name, price, quantity, image, rating, cartArray, pid }
 
     return (
         <div className='flex justify-center'>
-            <div className='border w-11/12 shadow-md mt-[10px] p-[10px]'>
-                <div className='flex mb-4'>
-                    <div className="flex-shrink-0">
+            <div className='border w-11/12 shadow-md mt-[10px] p-[10px] mb-[10px]'>
+                <div className='flex mb-4 lg:mx-[70px] lg:my-[20px]'>
+                    <div className="flex-shrink-0 lg:mr-[50px]">
                         <Image src={image} alt='img' width={100} height={100} />
-                        <div className="mt-1">
+                        <div className="mt-1 lg:ml-[10px]">
                             <button type='button' className="bg-gray-200 px-2 py-1 rounded-md" onClick={handleNegative}>-</button>
                             <span className="mx-2">{quantity}</span>
                             <button type='button' className="bg-gray-200 px-2 py-1 rounded-md" onClick={handlePositive}>+</button>
                         </div>
                     </div>
-                    <div className="ml-4">
+                    <div className="ml-4 lg:mt-[20px]">
                         <div className="font-bold">{name}</div>
                         <div className="text-sm text-gray-500">{rating}</div>
                         <div className="text-gray-500 font-bold mt-[10px] mb-[10px]">From ${price}</div>

@@ -16,8 +16,8 @@ const Navbar = () => {
 
     return (
         <div className="flex justify-between items-center bg-blue-600 py-4 px-6">
-            <Link href='/'> <button type='button' className="text-white text-xl font-bold" onClick={handleClick}>ABHI Store</button> </Link> 
-            <Link href="/../cart" className="text-white"><FaShoppingCart className="inline-block text-xl" /> </Link>
+            <Link href='/'> <button type='button' className="text-white text-xl font-bold lg:text-[30px] lg:ml-[70px]" onClick={handleClick}>ABHI Store</button> </Link> 
+            <Link href="/../cart" className="text-white lg:mr-[50px]"><FaShoppingCart className="inline-block text-xl size-8" /> </Link>
         </div>
     );
 };
